@@ -1,0 +1,66 @@
+$text-color: #6c757d;
+$color1-dark: #f1c40f;
+$color1-light: #0e626c;
+$back2-dark: #454748;
+$back2-dark-focus: #5c5d5e;
+$back-light: #e0e0e0;
+$back-light-focus: #ebebeb;
+
+.dark-mode {
+    .user-info-icon:hover {
+        color: $color1-dark;
+    }
+    .userConfig-input {
+        border-width: 0;
+        background-color: $back2-dark;
+        color: white;
+
+        &:focus {
+            background-color: $back2-dark-focus;
+            box-shadow: 0px 0px 0px 2px $color1-dark;
+        }
+        &::placeholder {
+            color: $text-color;
+        }
+    }
+}
+
+.light-mode {
+    .user-info-icon:hover {
+        color: $color1-light;
+    }
+    .userConfig-input {
+        border-width: 2px;
+        border-color: $back-light;
+        background-color: white;
+        &:focus {
+            color: black;
+            background-color: $back-light-focus;
+            box-shadow: 0px 0px 0px 2px $color1-light;
+        }
+        &::placeholder {
+            color: $text-color;
+        }
+    }
+}
+
+.user-name {
+    font-size: x-large;
+}
+
+.user-info-icon {
+    padding-top: 3px;
+    cursor: pointer;
+    color: $text-color;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width: 400px) {
+    .user-info-icon{
+        margin-left: auto;
+    }
+    .user-sumary, .user-options {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

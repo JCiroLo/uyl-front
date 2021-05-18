@@ -1,0 +1,106 @@
+$no-color: #7b8286;
+$no-color-2: #595959;
+$dark-color-1: #f1c40f;
+$dark-back-1: #232526;
+$light-color-1: #0e606c;
+$dark-modal-color: #383b3d;
+
+.dark-mode {
+    .swal2-popup {
+        background-color: $dark-modal-color;
+        h2 {
+            color: white;
+        }
+        .swal2-content {
+            color: $no-color;
+        }
+    }
+
+    .swal2-confirm {
+        color: rgba($dark-color-1, 0.5);
+        &:hover {
+            color: $dark-color-1;
+        }
+    }
+
+    .swal2-cancel {
+        color: rgba($no-color, 0.75);
+        &:hover {
+            color: $no-color;
+        }
+    }
+
+    .swal2-actions .swal2-loader {
+        border-color: $dark-color-1 transparent $dark-color-1 transparent;
+    }
+
+    .swal2-close {
+        color: $no-color;
+    }
+
+    .swal2-close:hover {
+        color: $dark-color-1 !important;
+    }
+}
+.light-mode {
+    .swal2-popup {
+        .swal2-content {
+            color: $no-color;
+        }
+    }
+
+    .swal2-confirm {
+        color: rgba($light-color-1, 0.5);
+        &:hover {
+            color: $light-color-1;
+        }
+    }
+
+    .swal2-cancel {
+        color: rgba($no-color, 0.75);
+        &:hover {
+            color: $no-color;
+        }
+    }
+
+    .swal2-actions .swal2-loader {
+        border-color: $light-color-1 transparent $light-color-1 transparent;
+    }
+
+    .swal2-close:hover {
+        color: $light-color-1 !important;
+    }
+}
+
+.btn-modal {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+}
+
+.swal2-popup {
+    border-radius: 15px !important;
+    padding: 20px !important;
+}
+
+.swal2-header {
+    padding: 0;
+    h2 {
+        margin: 0 0 20px 0;
+        font-size: 24px;
+    }
+}
+.swal2-content {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.swal2-actions {
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.swal2-close:focus {
+    box-shadow: 0 0 !important;
+    border-width: 0;
+}

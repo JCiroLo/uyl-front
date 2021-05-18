@@ -1,0 +1,25 @@
+$radius: 10px;
+
+.dark-mode {
+    .modal-content {
+        border-radius: $radius;
+        background-color: #383b3d;
+        color: white;
+    }
+}
+.light-mode {
+    .modal-content {
+        border-radius: $radius;
+        background-color: white;
+    }
+}
+
+.modal-header {
+    padding-top: 12px;
+    border: 0;
+}
+
+.modal-footer {
+    padding-bottom: 6px;
+    border: 0;
+}

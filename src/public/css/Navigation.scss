@@ -1,0 +1,388 @@
+$color1-dark: #f1c40f;
+$color1-light: #0e626c;
+$text-color-dark: #454748;
+$text-color-light: #6c757d;
+$back1-dark: #232526;
+$back2-dark: #454748;
+$back2-dark-focus: #5c5d5e;
+$back-light: #e0e0e0;
+$back-light-focus: #ebebeb;
+$dark-modal-color: #383b3d;
+
+.dark-mode {
+    .nav-search.active {
+        .search {
+            border-radius: 25px 25px 0 0;
+        }
+        input {
+            & ~ button {
+                background-color: $back2-dark-focus;
+                transition: 0.3s;
+            }
+            & ~ div[role="button"] {
+                background-color: $back2-dark-focus;
+                transition: 0.3s;
+            }
+
+            background-color: $back2-dark-focus;
+            color: white;
+            transition: background-color 0.3s;
+
+            &::placeholder {
+                color: $back-light-focus;
+            }
+        }
+    }
+    .search {
+        background-color: $back2-dark;
+        border-radius: 25px;
+
+        input {
+            border-radius: 25px 0 0 25px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background-color: transparent;
+            border-width: 0;
+
+            &::placeholder {
+                color: $back1-dark;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .nav-search-suggestions {
+        background-color: $back2-dark;
+    }
+
+    .nav-suggestion {
+        &:hover {
+            background-color: $back2-dark-focus;
+        }
+    }
+
+    .nav-open {
+        color: $text-color-dark;
+        margin-right: 15px;
+    }
+    .nav-btn {
+        color: $text-color-dark;
+    }
+    .nav-btn-preferences:hover, .nav-btn-authActions:hover {
+        color: $color1-dark;
+        //animation: rotate 1.5s linear infinite;
+        transition: 0.3s;
+    }
+
+    .nav-btn-back {
+        background-color: $back2-dark;
+        color: $back1-dark;
+        border-radius: 25px 0px 0px 25px;
+        border-width: 2px;
+    }
+    .nav-btn-submit {
+        background-color: $back2-dark;
+        color: $back1-dark;
+        border-radius: 0px 25px 25px 0px;
+        border-width: 2px;
+    }
+    .dropdown-action {
+        span {
+            color: white;
+            padding-left: 6px;
+        }
+        i {
+            color: $text-color-light;
+        }
+    }
+    .dropdown-menu {
+        background-color: $dark-modal-color;
+        border-radius: 5px;
+        border-width: 0;
+        transition: background-color 0.2s ease-out;
+    }
+    .dropdown-item:hover {
+        background-color: $back2-dark-focus;
+    }
+
+    // Preferences
+
+    .language-selector {
+        border-color: $color1-dark;
+        color: $color1-dark;
+    }
+
+    .language-selector.active {
+        background-color: $color1-dark;
+        color: $back1-dark;
+    }
+}
+
+.light-mode {
+    .nav-search.active {
+        .search {
+            border-radius: 25px 25px 0 0;
+        }
+        input {
+            & ~ button {
+                background-color: $back-light-focus;
+                transition: 0.3s;
+            }
+            & ~ div[role="button"] {
+                background-color: $back-light-focus;
+                transition: 0.3s;
+            }
+
+            background-color: $back-light-focus;
+            color: $back1-dark;
+            transition: background-color 0.3s;
+        }
+    }
+    .search {
+        background-color: $back-light-focus;
+        border-radius: 25px;
+
+        .form-control {
+            border-color: $back-light;
+            border-width: 0px;
+        }
+
+        input {
+            border-radius: 25px 0 0 25px;
+            background-color: $back-light;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-width: 0;
+
+            &::placeholder {
+                color: $text-color-light;
+            }
+        }
+    }
+
+    .nav-search-suggestions {
+        background-color: $back-light-focus;
+        color: $text-color-light;
+    }
+
+    .nav-suggestion {
+        &:hover {
+            background-color: $back-light;
+            color: $back1-dark;
+        }
+    }
+
+    .nav-open {
+        margin-right: 15px;
+        color: $text-color-light;
+        transition: 0.3s;
+    }
+    .nav-btn {
+        color: $text-color-light;
+    }
+    .nav-btn-preferences:hover, .nav-btn-authActions:hover {
+        color: $color1-light;
+        transition: 0.3s;
+    }
+    .nav-btn-back {
+        background-color: $back-light;
+        border-width: 0;
+        color: $text-color-light;
+        border-radius: 25px 0px 0px 25px;
+    }
+    .nav-btn-submit {
+        background-color: $back-light;
+        border-width: 0;
+        color: $text-color-light;
+        border-radius: 0px 25px 25px 0px;
+    }
+    .dropdown-action {
+        span {
+            color: black;
+            padding-left: 6px;
+        }
+        i {
+            color: $text-color-dark;
+        }
+    }
+    .dropdown-menu {
+        border-radius: 5px;
+        transition: background-color 0.2s ease-out;
+        box-shadow: 0 0 8px 0px #23252633;
+        border: transparent;
+    }
+    .dropdown-item .dropdown-menu {
+        background-color: white;
+        transition: background-color 0.2s ease-out;
+    }
+    .dropdown-item:hover {
+        background-color: $back-light;
+    }
+
+    // Preferences
+
+    .language-selector {
+        border-color: $color1-light;
+        color: $color1-light;
+    }
+
+    .language-selector.active {
+        background-color: $color1-light;
+        color: white;
+    }
+}
+
+.nav-search-suggestions {
+    background-color: $back2-dark;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+    & a:last-child {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+.nav-suggestion {
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar {
+    width: 100%;
+    font-family: "Righteous";
+    padding: .5rem 10px;
+}
+
+.nav-color {
+    background: transparent;
+    color: white;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    padding: 0px;
+    &:focus {
+        outline: 0;
+    }
+}
+
+// Navbar icon colors
+
+.nav-btn-logout:hover {
+    color: tomato;
+    transition: 0.3s;
+}
+
+.nav-btn-add:hover {
+    color: #1daa51;
+    transition: 0.3s;
+}
+
+.nav-btn-submit {
+    font-size: 12px;
+}
+
+.nav-open {
+    cursor: pointer;
+    &:active {
+        color: $back-light;
+        transition: 0.1s;
+    }
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+.nav-btn-search {
+    display: none;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.nav-btn-preferences:hover {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.nav-btn-authActions{
+    border-left: 1px solid rgba($color: $text-color-light, $alpha: .3);
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+}
+
+.nav-modal-links a{
+    font-size: 24px;
+}
+
+// Language settings
+
+.language-selector {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.language-selector.active {
+    border-width: 0;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-btn-search {
+        display: block;
+    }
+    .hide-nav-search {
+        display: none;
+    }
+    .search input {
+        border-width: 2px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px !important;
+    }
+    .nav-btn-search {
+        &:hover {
+            cursor: pointer;
+            color: $back2-dark;
+            transition: 0.3s;
+        }
+    }
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

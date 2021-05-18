@@ -1,0 +1,60 @@
+$color1-dark: #f1c40f;
+$color1-light: #0e626c;
+$back-light-focus: #ebebeb;
+$dark-modal-color: #383b3d;
+
+.dark-mode {
+    .search-site {
+        background-color: transparent;
+    }
+}
+
+.light-mode {
+    .search-site {
+        background-color: transparent;
+    }
+}
+
+.search-site {
+    margin: 0.5em 0 0.5em 0;
+    border-radius: 10px;
+}
+
+.search-site-data {
+    padding: 0.5em 1em;
+}
+
+.search-site-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.search-site-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .search-site {
+        background-color: transparent !important;
+        padding: 0;
+    }
+    .search-site-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-transform: capitalize;
+    }
+}

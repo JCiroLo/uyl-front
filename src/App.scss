@@ -1,0 +1,208 @@
+/* Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    padding-right: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.site-thumb {
+    border-radius: 0.5em;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.thumb-preview {
+    background-color: #99999944;
+    padding-bottom: 56.25%;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:active {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.is-invalid {
+    box-shadow: 0px 0px 0px 2px tomato;
+}
+
+.invalid-feedback {
+    color: tomato;
+}
+
+.is-valid {
+    box-shadow: 0px 0px 0px 2px seagreen;
+}
+
+.valid-feedback {
+    color: seagreen;
+}
+
+/* Accesibility */
+
+.dark-mode {
+    .progress {
+        background-color: #99999944;
+        border-radius: 1em;
+    }
+    .progress-bar {
+        background-color: #f1c40f;
+        border-radius: 1em;
+    }
+}
+
+.light-mode {
+    .progress {
+        background-color: #99999944;
+        border-radius: 1em;
+    }
+    .progress-bar {
+        background-color: #0e606c;
+        border-radius: 1em;
+    }
+}
+
+.r-font {
+    font-family: "righteous";
+}
+
+.k-font {
+    font-family: "Reem Kufi";
+}
+
+.d-font {
+    font-family: "Denk One";
+}
+
+.dark-mode .link {
+    color: #f1c40f;
+    transition: 0.1s;
+}
+
+.light-mode .link {
+    color: #0e606c;
+    transition: 0.1s;
+}
+
+.dark-mode .link:hover {
+    color: #f1eb0f;
+    transition: 0.2s;
+}
+
+.light-mode .link:hover {
+    color: #388590;
+    transition: 0.2s;
+}
+
+.red-text {
+    color: #dd4b39;
+    font-size: 80%;
+}
+
+.green-text {
+    font-weight: 400;
+    color: seagreen;
+}
+
+.no-select-text {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Box Styling - Layout*/
+
+.separator {
+    width: 0%;
+    position: relative;
+}
+
+/* Separators */
+
+.top {
+    top: 0%;
+    width: 5px;
+    height: 41%;
+    position: absolute;
+    background: #999999;
+    left: -2px;
+    border-radius: 5px;
+}
+
+.mid {
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 18%;
+    left: -23px;
+    top: 41%;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.bot {
+    bottom: 0%;
+    height: 41%;
+    width: 5px;
+    position: absolute;
+    background: #999999;
+    left: -2px;
+    border-radius: 5px;
+}
+
+.test-box {
+    border: 2px solid black;
+}
+
+/* Spinner loading */
+
+.dark-mode .spinner-border {
+    color: #f1c40f;
+}
+
+.light-mode .spinner-border {
+    color: #388590;
+}

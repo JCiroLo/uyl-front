@@ -1,0 +1,53 @@
+
+.about-title {
+    font-size: 74px;
+    text-align: center;
+    color: #999999;
+    text-shadow: .4vw .4vw #99999955;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.about-title p {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.about-description {
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+.about-features {
+    font-size: 74px;
+    color: #999999;
+    text-shadow: -.4vw .4vw #99999955;
+    text-align: center;
+}
+
+.about-features-content {
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.about-features-content p {
+    text-align: center;
+}
+
+.about-icon {
+    color: #f1c40f;
+}
+
+.horizontal-border {
+    border-bottom: 4px solid #999999;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .about-features {
+        order: 1;
+    }
+    .about-features-content {
+        order: 2;
+    }
+}

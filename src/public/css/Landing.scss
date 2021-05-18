@@ -1,0 +1,86 @@
+$color0-dark: #f1eb0f;
+$color1-dark: #f1c40f;
+$color2-dark: #f19e0f;
+$color0-light: #388590;
+$color1-light: #0e626c;
+$color2-light: #01363e;
+
+.dark-mode {
+    .greeting {
+        font-size: 4vw;
+        background: -moz-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: -webkit-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: linear-gradient(to left, $color0-dark, $color1-dark, $color2-dark);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Righteous";
+    }
+    .title {
+        font-weight: 900;
+        text-align: center;
+        font-size: 12vw;
+        background: -moz-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: -webkit-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: linear-gradient(to left, $color0-dark, $color1-dark, $color2-dark);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Righteous";
+    }
+    .subtitle {
+        font-weight: 700;
+        text-align: center;
+        font-size: 3vw;
+        font-family: "Righteous";
+        background: -moz-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: -webkit-linear-gradient(left, $color0-dark, $color1-dark, $color2-dark);
+        background: linear-gradient(to left, $color0-dark, $color1-dark, $color2-dark);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.light-mode {
+    .greeting {
+        font-size: 4vw;
+        font-family: "Righteous";
+        background: -moz-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: -webkit-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: linear-gradient(to left, $color0-light, $color1-light, $color2-light);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .title {
+        font-weight: 900;
+        text-align: center;
+        font-size: 12vw;
+        font-family: "Righteous";
+        background: -moz-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: -webkit-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: linear-gradient(to left, $color0-light, $color1-light, $color2-light);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+        font-weight: 700;
+        text-align: center;
+        font-size: 3vw;
+        font-family: "Righteous";
+        background: -moz-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: -webkit-linear-gradient(left, $color0-light, $color1-light, $color2-light);
+        background: linear-gradient(to left, $color0-light, $color1-light, $color2-light);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

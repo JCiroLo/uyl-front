@@ -1,0 +1,77 @@
+/* Toggle para activar el modo oscuro en el navbar */
+
+$color-dark: #f1c40f;
+$color-light: #0e626c;
+$no-color: #7b8286;
+
+.light-mode {
+    .btn-toggle {
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 1.5rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+        background: rgba($color-light, $alpha: .5);
+    }
+}
+.dark-mode {
+    .btn-toggle {
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 1.5rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+        background: rgba($color-dark, $alpha: .5);
+    }
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+    outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+    line-height: 1.5rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle:before {
+    content: "Light";
+    color: $color-light !important;
+    left: -4rem;
+}
+.btn-toggle:after {
+    content: "Dark";
+    color: $no-color !important;
+    right: -4rem;
+}
+.btn-toggle > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+    left: 1.6875rem;
+    transition: left 0.25s;
+}
+.btn-toggle.active:before {
+    color: $no-color !important;
+}
+.btn-toggle.active:after {
+    color: $color-dark !important;
+}

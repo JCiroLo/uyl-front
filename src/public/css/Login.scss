@@ -1,0 +1,31 @@
+$color1-dark: #f1c40f;
+$color1-light: #0e626c;
+
+.dark-mode .login-form {
+    .form-control:focus {
+        -webkit-box-shadow: 0px 0px 0px 2px $color1-dark;
+        box-shadow: 0px 0px 0px 2px $color1-dark;
+        border: none;
+        transition: 0s;
+    }
+}
+
+.light-mode .login-form {
+    .form-control:focus {
+        -webkit-box-shadow: 0px 0px 0px 2px $color1-light;
+        box-shadow: 0px 0px 0px 2px $color1-light;
+        border: none;
+        transition: 0s;
+    }
+}
+
+.login-form {
+    .form-control {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        transition: 0s;
+    }
+    .form-group {
+        margin: 0px;
+    }
+}
